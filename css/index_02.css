@@ -114,3 +114,50 @@ p.fw-bold.h1 {
 }
 
 
+
+/* ICON SOCIAL MEDIA */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #111;
+  color: #fff;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scooter {
+  width: 120px;
+  animation: ride 2s ease forwards;
+}
+
+@keyframes ride {
+  0% { transform: translateX(-120vw) rotate(-10deg); opacity:0; }
+  30% { opacity:1; }
+  60% { transform: translateX(0) rotate(0); }
+  100% { transform: translateX(0); }
+}
+
+.preloader-content h1 {
+  animation: fadeInDown 1s ease;
+}
+.preloader-content p {
+  animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

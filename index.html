@@ -14,60 +14,85 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 
 
 </head>
 
 <body>
+    <!-- Preloader / Welcome
+<div id="preloader">
+  <div class="preloader-content text-center">
+    <h1 class="fw-bold text-warning">Welcome to Batoluxi</h1>
+    <p class="text-light">Coder ✕ Tour Guide</p>
+  </div>
+</div> -->
+    <!-- Preloader / Welcome -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <!-- <img src="assets/carr.json" alt="motorbike" class="scooter"> -->
+            <lottie-player src="assets/Hot Pot.json" class="scooter text-center ms-5" background="transparent" speed="1"
+                style="width: 600px; height: 400px;" loop autoplay>
+            </lottie-player>
+            <h1 class="fw-bold text-warning mt-3 text-center">CV Apply Saigon Hotpot</h1>
+            <p class="text-light text-center">Welcome to Batoluxi</p>
+        </div>
+    </div>
+
+
     <div class="container-fluid">
         <div class="container">
-           <!-- NAVBAR FIXED-TOP + OFFCANVAS ON MOBILE -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
-  <div class="container">
-    <!-- Brand -->
-    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-      <i class="bi bi-compass-fill text-warning"></i>
-      <span class="fw-bold">Batoluxi</span>
-    </a>
+            <!-- NAVBAR FIXED-TOP + OFFCANVAS ON MOBILE -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
+                <div class="container">
+                    <!-- Brand -->
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                        <i class="bi bi-compass-fill text-warning"></i>
+                        <span class="fw-bold">Batoluxi</span>
+                    </a>
 
-    <!-- Nút hamburger (mobile) mở OFFCANVAS -->
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+                    <!-- Nút hamburger (mobile) mở OFFCANVAS -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <!-- MENU DESKTOP (>= lg): hiển thị inline -->
-    <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
-      <ul class="navbar-nav fs-6 custom-nav">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                    <!-- MENU DESKTOP (>= lg): hiển thị inline -->
+                    <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+                        <ul class="navbar-nav fs-6 custom-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-<!-- OFFCANVAS (MOBILE < lg) -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Batoluxi</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="navbar-nav fs-5">
-      <li class="nav-item"><a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#experience" data-bs-dismiss="offcanvas">Experience</a></li>
-      <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">Contact</a></li>
-    </ul>
-  </div>
-</div>
+            <!-- OFFCANVAS (MOBILE < lg) -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Batoluxi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item"><a class="nav-link active" href="#home"
+                                data-bs-dismiss="offcanvas">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#experience"
+                                data-bs-dismiss="offcanvas">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-<!-- Spacer để nội dung không bị che bởi fixed-top -->
+            <!-- Spacer để nội dung không bị che bởi fixed-top -->
 
 
             <header></header>
@@ -141,7 +166,7 @@
             <main>
                 <div class="section-1">
                     <div class="row">
-                        <div class="col-md-6 "  data-aos="fade-right" data-aos-duration="1000">
+                        <div class="col-md-6 " data-aos="fade-right" data-aos-duration="1000">
                             <div class="card card-default">
                                 <div class="card-body">
                                     <div class="img_profile">
@@ -150,7 +175,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 "  data-aos="fade-left" data-aos-duration="1000">
+                        <div class="col-md-6 " data-aos="fade-left" data-aos-duration="1000">
                             <div class="card card-default">
                                 <div class="card-body">
                                     <div class="profile">
@@ -287,7 +312,7 @@
             <main id="experience">
                 <div class="section-1">
                     <div class="row">
-                        <div class="col-md-4 my-2"  data-aos="fade-right" data-aos-duration="1000">
+                        <div class="col-md-4 my-2" data-aos="fade-right" data-aos-duration="1000">
                             <div class="card">
                                 <div class="card-header">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#detailModal-03"> <img
@@ -305,12 +330,12 @@
                                             Details
                                         </a></p>
 
-                                
+
 
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 my-2"  data-aos="fade" data-aos-duration="1000">
+                        <div class="col-md-4 my-2" data-aos="fade" data-aos-duration="1000">
                             <div class="card">
                                 <div class="card-header">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#detailModal"> <img
@@ -332,7 +357,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 my-2"  data-aos="fade-left" data-aos-duration="1000">
+                        <div class="col-md-4 my-2" data-aos="fade-left" data-aos-duration="1000">
                             <div class="card">
                                 <div class="card-header">
                                     <a href="" data-bs-toggle="modal" data-bs-target="#detailModal-02"> <img
@@ -350,7 +375,7 @@
                                         </a></p>
 
                                     <!-- Modal -->
-                               
+
 
                                 </div>
                             </div>
@@ -402,481 +427,413 @@
             <!-- Copyright -->
         </footer>
     </div>
- <!-- Modal -->
-         <div class="modal fade" id="detailModal-02" tabindex="-1"
-                                        aria-labelledby="detailModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-xl"> <!-- đổi modal-xl nếu muốn rộng hơn -->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title mb-0" id="detailModalLabel">Experience
-                                                        Details</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
+    <!-- Modal -->
+    <div class="modal fade" id="detailModal-02" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl"> <!-- đổi modal-xl nếu muốn rộng hơn -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mb-0" id="detailModalLabel">Experience
+                        Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
 
-                                                <div class="modal-body">
-                                                    <div class="row g-4">
-                                                        <!-- Bên trái: Carousel + Thumbnails -->
-                                                        <div class="col-lg-7">
-                                                            <!-- Giữ tỷ lệ cố định để modal không giật: -->
-                                                            <div
-                                                                class="ratio ratio-16x9 rounded border overflow-hidden">
-                                                                <div id="projectCarousel-02"
-                                                                    class="carousel slide h-100" data-bs-ride="carousel"
-                                                                    data-bs-interval="2500">
-                                                                    <div class="carousel-inner h-100">
-                                                                        <div class="carousel-item active h-100">
-                                                                            <img src="img/v1.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 1">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/v3.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 2">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/v4.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 3">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/doanthanhnien.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 4">
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <!-- Nút điều khiển (tuỳ chọn) -->
-                                                                    <button class="carousel-control-prev" type="button"
-                                                                        data-bs-target="#projectCarousel-02"
-                                                                        data-bs-slide="prev">
-                                                                        <span class="carousel-control-prev-icon"></span>
-                                                                    </button>
-                                                                    <button class="carousel-control-next" type="button"
-                                                                        data-bs-target="#projectCarousel-02"
-                                                                        data-bs-slide="next">
-                                                                        <span class="carousel-control-next-icon"></span>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-
-                                                            <!-- Thumbnails (giữ nguyên khi carousel chạy) -->
-                                                            <div class="row row-cols-4 g-2 mt-2" id="thumbRow-02">
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0 active"
-                                                                        data-bs-target="#projectCarousel-02"
-                                                                        data-bs-slide-to="0" aria-label="Ảnh 1">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/v1.jpg" class="thumb-img"
-                                                                                alt="Thumb 1">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel-02"
-                                                                        data-bs-slide-to="1" aria-label="Ảnh 2">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/v3.jpg" class="thumb-img"
-                                                                                alt="Thumb 2">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel-02"
-                                                                        data-bs-slide-to="2" aria-label="Ảnh 3">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/v4.jpg" class="thumb-img"
-                                                                                alt="Thumb 3">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel-02"
-                                                                        data-bs-slide-to="3" aria-label="Ảnh 4">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/doanthanhnien.jpg"
-                                                                                class="thumb-img" alt="Thumb 4">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Bên phải: Nội dung dự án -->
-                                                        <div class="col-lg-5">
-                                                            <h4 class="mb-3">Vesak 2025 Volunteer Experience</h4>
-                                                            <p>
-                                                                In May 2025, I had the honor to serve as a
-                                                                <strong>volunteer coordinator and welcoming
-                                                                    assistant</strong>
-                                                                at the international celebration of <strong>Vesak
-                                                                    2025</strong>. This was a very large Buddhist
-                                                                festival
-                                                                with thousands of participants from many countries. My
-                                                                main responsibility was to support
-                                                                international guests, including <strong>pilgrims from
-                                                                    India</strong> and delegations from
-                                                                Thailand, Sri Lanka, and Myanmar. I helped them during
-                                                                the arrival process, guided them to the
-                                                                ceremony area, and made sure that their time of worship
-                                                                and cultural exchange was smooth and respectful.
-                                                            </p>
-
-                                                            <ul class="list-unstyled mb-4">
-                                                                <li>🌏 <b>Time line:</b> 20/6/2025</li>
-                                                                <li>🤝 <b>Role:</b> Volunteer coordinator and assistant
-                                                                    for foreign visitors</li>
-                                                                <li>🕌 <b>Guests:</b> Pilgrims and delegations from
-                                                                    India and other Asian countries</li>
-                                                            </ul>
-
-                                                            <div class="border rounded p-3 bg-light small">
-                                                                <h6 class="fw-bold mb-2">Key Achievements and Skills
-                                                                    Learned</h6>
-                                                                <ul class="mb-0 ps-3">
-                                                                    <li>Improved my <strong>English
-                                                                            communication</strong> through direct
-                                                                        interaction with foreign visitors</li>
-                                                                    <li>Practiced <strong>group coordination</strong>
-                                                                        and supported large numbers of guests in a
-                                                                        festival space</li>
-                                                                    <li>Gained experience in <strong>intercultural
-                                                                            communication</strong> and solving
-                                                                        unexpected problems politely</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-
-
-
-                                                    </div><!-- /row -->
-                                                </div><!-- /modal-body -->
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- Bên trái: Carousel + Thumbnails -->
+                        <div class="col-lg-7">
+                            <!-- Giữ tỷ lệ cố định để modal không giật: -->
+                            <div class="ratio ratio-16x9 rounded border overflow-hidden">
+                                <div id="projectCarousel-02" class="carousel slide h-100" data-bs-ride="carousel"
+                                    data-bs-interval="2500">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item active h-100">
+                                            <img src="img/v1.jpg" class="carousel-img-fit" alt="Ảnh 1">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/v3.jpg" class="carousel-img-fit" alt="Ảnh 2">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/v4.jpg" class="carousel-img-fit" alt="Ảnh 3">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/doanthanhnien.jpg" class="carousel-img-fit" alt="Ảnh 4">
                                         </div>
                                     </div>
-                                        <!-- Modal -->
-                                    <div class="modal fade" id="detailModal-03" tabindex="-1"
-                                        aria-labelledby="detailModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-xl"> <!-- đổi modal-xl nếu muốn rộng hơn -->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title mb-0" id="detailModalLabel">Experience
-                                                        Details</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
 
-                                                <div class="modal-body">
-                                                    <div class="row g-4">
-                                                        <!-- Bên trái: Carousel + Thumbnails -->
-                                                        <div class="col-lg-7">
-                                                            <!-- Giữ tỷ lệ cố định để modal không giật: -->
-                                                            <div
-                                                                class="ratio ratio-16x9 rounded border overflow-hidden">
-                                                                <div id="projectCarousel-03"
-                                                                    class="carousel slide h-100" data-bs-ride="carousel"
-                                                                    data-bs-interval="2500">
-                                                                    <div class="carousel-inner h-100">
-                                                                        <div class="carousel-item active h-100">
-                                                                            <img src="img/o1.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 1">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/o2.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 2">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/o4.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 3">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/o6.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 4">
-                                                                        </div>
-                                                                    </div>
+                                    <!-- Nút điều khiển (tuỳ chọn) -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#projectCarousel-02" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#projectCarousel-02" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
 
-                                                                    <!-- Nút điều khiển (tuỳ chọn) -->
-                                                                    <button class="carousel-control-prev" type="button"
-                                                                        data-bs-target="#projectCarousel-03"
-                                                                        data-bs-slide="prev">
-                                                                        <span class="carousel-control-prev-icon"></span>
-                                                                    </button>
-                                                                    <button class="carousel-control-next" type="button"
-                                                                        data-bs-target="#projectCarousel-03"
-                                                                        data-bs-slide="next">
-                                                                        <span class="carousel-control-next-icon"></span>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
+                            <!-- Thumbnails (giữ nguyên khi carousel chạy) -->
+                            <div class="row row-cols-4 g-2 mt-2" id="thumbRow-02">
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0 active"
+                                        data-bs-target="#projectCarousel-02" data-bs-slide-to="0" aria-label="Ảnh 1">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/v1.jpg" class="thumb-img" alt="Thumb 1">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel-02"
+                                        data-bs-slide-to="1" aria-label="Ảnh 2">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/v3.jpg" class="thumb-img" alt="Thumb 2">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel-02"
+                                        data-bs-slide-to="2" aria-label="Ảnh 3">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/v4.jpg" class="thumb-img" alt="Thumb 3">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel-02"
+                                        data-bs-slide-to="3" aria-label="Ảnh 4">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/doanthanhnien.jpg" class="thumb-img" alt="Thumb 4">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-                                                            <!-- Thumbnails (giữ nguyên khi carousel chạy) -->
-                                                            <div class="row row-cols-4 g-2 mt-2" id="thumbRow-03">
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0 active"
-                                                                        data-bs-target="#projectCarousel-03"
-                                                                        data-bs-slide-to="0" aria-label="Ảnh 1">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/o1.jpg" class="thumb-img"
-                                                                                alt="Thumb 1">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel-03"
-                                                                        data-bs-slide-to="1" aria-label="Ảnh 2">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/o2.jpg" class="thumb-img"
-                                                                                alt="Thumb 2">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel-03"
-                                                                        data-bs-slide-to="2" aria-label="Ảnh 3">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/o4.jpg" class="thumb-img"
-                                                                                alt="Thumb 3">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel-03"
-                                                                        data-bs-slide-to="3" aria-label="Ảnh 4">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/o6.jpg" class="thumb-img"
-                                                                                alt="Thumb 4">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                        <!-- Bên phải: Nội dung dự án -->
+                        <div class="col-lg-5">
+                            <h4 class="mb-3">Vesak 2025 Volunteer Experience</h4>
+                            <p>
+                                In May 2025, I had the honor to serve as a
+                                <strong>volunteer coordinator and welcoming
+                                    assistant</strong>
+                                at the international celebration of <strong>Vesak
+                                    2025</strong>. This was a very large Buddhist
+                                festival
+                                with thousands of participants from many countries. My
+                                main responsibility was to support
+                                international guests, including <strong>pilgrims from
+                                    India</strong> and delegations from
+                                Thailand, Sri Lanka, and Myanmar. I helped them during
+                                the arrival process, guided them to the
+                                ceremony area, and made sure that their time of worship
+                                and cultural exchange was smooth and respectful.
+                            </p>
 
-                                                        <!-- Bên phải: Nội dung dự án -->
-                                                        <div class="col-lg-5">
-                                                            <h4 class="mb-3">English Club Project</h4>
-                                                            <p>
-                                                                As a <strong>team leader</strong>, I worked with other
-                                                                students to establish an
-                                                                <strong>English Club</strong> at the university. The
-                                                                project lasted for
-                                                                <strong>three months</strong> and included many exciting
-                                                                sessions, attracting
-                                                                dozens of students who were interested in languages. The
-                                                                club helped members
-                                                                improve their communication skills, gain more confidence
-                                                                in public speaking,
-                                                                and develop teamwork abilities.
-                                                            </p>
+                            <ul class="list-unstyled mb-4">
+                                <li>🌏 <b>Time line:</b> 20/6/2025</li>
+                                <li>🤝 <b>Role:</b> Volunteer coordinator and assistant
+                                    for foreign visitors</li>
+                                <li>🕌 <b>Guests:</b> Pilgrims and delegations from
+                                    India and other Asian countries</li>
+                            </ul>
 
-                                                            <ul class="list-unstyled mb-4">
-                                                                <li>⏳ <b>Time Line:</b> 15/06/2023</li>
-                                                                <li>🎯 <b>Objective:</b> To create an environment for
-                                                                    practicing English and
-                                                                    connecting students</li>
-                                                                <li>📈 <b>Result:</b> More than 50 students joined
-                                                                    regularly and improved their
-                                                                    speaking skills</li>
-                                                            </ul>
+                            <div class="border rounded p-3 bg-light small">
+                                <h6 class="fw-bold mb-2">Key Achievements and Skills
+                                    Learned</h6>
+                                <ul class="mb-0 ps-3">
+                                    <li>Improved my <strong>English
+                                            communication</strong> through direct
+                                        interaction with foreign visitors</li>
+                                    <li>Practiced <strong>group coordination</strong>
+                                        and supported large numbers of guests in a
+                                        festival space</li>
+                                    <li>Gained experience in <strong>intercultural
+                                            communication</strong> and solving
+                                        unexpected problems politely</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                                                            <div class="border rounded p-3 bg-light small">
-                                                                <h6 class="fw-bold mb-2">Highlights & Lessons Learned
-                                                                </h6>
-                                                                <ul class="mb-0 ps-3">
-                                                                    <li>Planned meeting content and assigned tasks
-                                                                        clearly</li>
-                                                                    <li>Organized different activities: group
-                                                                        discussion, games, and presentations</li>
-                                                                    <li>Improved leadership, coordination, and
-                                                                        team-building skills</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
 
-                                                    </div><!-- /row -->
-                                                </div><!-- /modal-body -->
 
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
+                    </div><!-- /row -->
+                </div><!-- /modal-body -->
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="detailModal-03" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl"> <!-- đổi modal-xl nếu muốn rộng hơn -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mb-0" id="detailModalLabel">Experience
+                        Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- Bên trái: Carousel + Thumbnails -->
+                        <div class="col-lg-7">
+                            <!-- Giữ tỷ lệ cố định để modal không giật: -->
+                            <div class="ratio ratio-16x9 rounded border overflow-hidden">
+                                <div id="projectCarousel-03" class="carousel slide h-100" data-bs-ride="carousel"
+                                    data-bs-interval="2500">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item active h-100">
+                                            <img src="img/o1.jpg" class="carousel-img-fit" alt="Ảnh 1">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/o2.jpg" class="carousel-img-fit" alt="Ảnh 2">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/o4.jpg" class="carousel-img-fit" alt="Ảnh 3">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/o6.jpg" class="carousel-img-fit" alt="Ảnh 4">
                                         </div>
                                     </div>
-                                                                        <!-- Modal -->
-                                    <div class="modal fade" id="detailModal" tabindex="-1"
-                                        aria-labelledby="detailModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-xl"> <!-- đổi modal-xl nếu muốn rộng hơn -->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title mb-0" id="detailModalLabel">Experience
-                                                        Details</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
 
-                                                <div class="modal-body">
-                                                    <div class="row g-4">
-                                                        <!-- Bên trái: Carousel + Thumbnails -->
-                                                        <div class="col-lg-7">
-                                                            <!-- Giữ tỷ lệ cố định để modal không giật: -->
-                                                            <div
-                                                                class="ratio ratio-16x9 rounded border overflow-hidden">
-                                                                <div id="projectCarousel" class="carousel slide h-100"
-                                                                    data-bs-ride="carousel" data-bs-interval="2500">
-                                                                    <div class="carousel-inner h-100">
-                                                                        <div class="carousel-item active h-100">
-                                                                            <img src="img/thu-tien.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 1">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/ah-mat.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 2">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/mat2.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 3">
-                                                                        </div>
-                                                                        <div class="carousel-item h-100">
-                                                                            <img src="img/nhatre.jpg"
-                                                                                class="carousel-img-fit" alt="Ảnh 4">
-                                                                        </div>
-                                                                    </div>
+                                    <!-- Nút điều khiển (tuỳ chọn) -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#projectCarousel-03" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#projectCarousel-03" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
 
-                                                                    <!-- Nút điều khiển (tuỳ chọn) -->
-                                                                    <button class="carousel-control-prev" type="button"
-                                                                        data-bs-target="#projectCarousel"
-                                                                        data-bs-slide="prev">
-                                                                        <span class="carousel-control-prev-icon"></span>
-                                                                    </button>
-                                                                    <button class="carousel-control-next" type="button"
-                                                                        data-bs-target="#projectCarousel"
-                                                                        data-bs-slide="next">
-                                                                        <span class="carousel-control-next-icon"></span>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
+                            <!-- Thumbnails (giữ nguyên khi carousel chạy) -->
+                            <div class="row row-cols-4 g-2 mt-2" id="thumbRow-03">
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0 active"
+                                        data-bs-target="#projectCarousel-03" data-bs-slide-to="0" aria-label="Ảnh 1">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/o1.jpg" class="thumb-img" alt="Thumb 1">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel-03"
+                                        data-bs-slide-to="1" aria-label="Ảnh 2">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/o2.jpg" class="thumb-img" alt="Thumb 2">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel-03"
+                                        data-bs-slide-to="2" aria-label="Ảnh 3">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/o4.jpg" class="thumb-img" alt="Thumb 3">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel-03"
+                                        data-bs-slide-to="3" aria-label="Ảnh 4">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/o6.jpg" class="thumb-img" alt="Thumb 4">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-                                                            <!-- Thumbnails (giữ nguyên khi carousel chạy) -->
-                                                            <div class="row row-cols-4 g-2 mt-2" id="thumbRow">
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0 active"
-                                                                        data-bs-target="#projectCarousel"
-                                                                        data-bs-slide-to="0" aria-label="Ảnh 1">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/thu-tien.jpg"
-                                                                                class="thumb-img" alt="Thumb 1">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel"
-                                                                        data-bs-slide-to="1" aria-label="Ảnh 2">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/ah-mat.jpg" class="thumb-img"
-                                                                                alt="Thumb 2">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel"
-                                                                        data-bs-slide-to="2" aria-label="Ảnh 3">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/mat2.jpg" class="thumb-img"
-                                                                                alt="Thumb 3">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="thumb-btn w-100 border-0 p-0"
-                                                                        data-bs-target="#projectCarousel"
-                                                                        data-bs-slide-to="3" aria-label="Ảnh 4">
-                                                                        <div
-                                                                            class="ratio ratio-1x1 rounded overflow-hidden border">
-                                                                            <img src="img/nhatre.jpg" class="thumb-img"
-                                                                                alt="Thumb 4">
-                                                                        </div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                        <!-- Bên phải: Nội dung dự án -->
+                        <div class="col-lg-5">
+                            <h4 class="mb-3">English Club Project</h4>
+                            <p>
+                                As a <strong>team leader</strong>, I worked with other
+                                students to establish an
+                                <strong>English Club</strong> at the university. The
+                                project lasted for
+                                <strong>three months</strong> and included many exciting
+                                sessions, attracting
+                                dozens of students who were interested in languages. The
+                                club helped members
+                                improve their communication skills, gain more confidence
+                                in public speaking,
+                                and develop teamwork abilities.
+                            </p>
 
-                                                        <!-- Bên phải: Nội dung dự án -->
-                                                        <div class="col-lg-5">
-                                                            <h4 class="mb-3">Charity Project</h4>
-                                                            <p>
-                                                                As a <strong>team leader</strong>, I organized a
-                                                                fundraising sales program
-                                                                that lasted for <strong>three weeks</strong>. The
-                                                                project attracted many
-                                                                volunteers and local supporters. As a result, we
-                                                                successfully raised
-                                                                <strong>2,000,000 VND</strong> to support an orphanage
-                                                                in District 12.
-                                                            </p>
+                            <ul class="list-unstyled mb-4">
+                                <li>⏳ <b>Time Line:</b> 15/06/2023</li>
+                                <li>🎯 <b>Objective:</b> To create an environment for
+                                    practicing English and
+                                    connecting students</li>
+                                <li>📈 <b>Result:</b> More than 50 students joined
+                                    regularly and improved their
+                                    speaking skills</li>
+                            </ul>
 
-                                                            <ul class="list-unstyled mb-4">
-                                                                <li>⏳ <b>Time Line:</b> 17/07/2024</li>
-                                                                <li>🎯 <b>Objective:</b> Fundraising to support orphans
-                                                                </li>
-                                                                <li>📈 <b>Result:</b> Successfully collected 2,000,000
-                                                                    VND</li>
-                                                            </ul>
+                            <div class="border rounded p-3 bg-light small">
+                                <h6 class="fw-bold mb-2">Highlights & Lessons Learned
+                                </h6>
+                                <ul class="mb-0 ps-3">
+                                    <li>Planned meeting content and assigned tasks
+                                        clearly</li>
+                                    <li>Organized different activities: group
+                                        discussion, games, and presentations</li>
+                                    <li>Improved leadership, coordination, and
+                                        team-building skills</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                                                            <div class="border rounded p-3 bg-light small">
-                                                                <h6 class="fw-bold mb-2">Highlights & Lessons Learned
-                                                                </h6>
-                                                                <ul class="mb-0 ps-3">
-                                                                    <li>Planned the sales program and divided tasks
-                                                                        clearly</li>
-                                                                    <li>Used different communication channels to reach
-                                                                        more people</li>
-                                                                    <li>Improved skills in communication, persuasion,
-                                                                        and team management</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+                    </div><!-- /row -->
+                </div><!-- /modal-body -->
 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl"> <!-- đổi modal-xl nếu muốn rộng hơn -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mb-0" id="detailModalLabel">Experience
+                        Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
 
-                                                    </div><!-- /row -->
-                                                </div><!-- /modal-body -->
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <!-- Bên trái: Carousel + Thumbnails -->
+                        <div class="col-lg-7">
+                            <!-- Giữ tỷ lệ cố định để modal không giật: -->
+                            <div class="ratio ratio-16x9 rounded border overflow-hidden">
+                                <div id="projectCarousel" class="carousel slide h-100" data-bs-ride="carousel"
+                                    data-bs-interval="2500">
+                                    <div class="carousel-inner h-100">
+                                        <div class="carousel-item active h-100">
+                                            <img src="img/thu-tien.jpg" class="carousel-img-fit" alt="Ảnh 1">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/ah-mat.jpg" class="carousel-img-fit" alt="Ảnh 2">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/mat2.jpg" class="carousel-img-fit" alt="Ảnh 3">
+                                        </div>
+                                        <div class="carousel-item h-100">
+                                            <img src="img/nhatre.jpg" class="carousel-img-fit" alt="Ảnh 4">
                                         </div>
                                     </div>
+
+                                    <!-- Nút điều khiển (tuỳ chọn) -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#projectCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#projectCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Thumbnails (giữ nguyên khi carousel chạy) -->
+                            <div class="row row-cols-4 g-2 mt-2" id="thumbRow">
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0 active"
+                                        data-bs-target="#projectCarousel" data-bs-slide-to="0" aria-label="Ảnh 1">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/thu-tien.jpg" class="thumb-img" alt="Thumb 1">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel"
+                                        data-bs-slide-to="1" aria-label="Ảnh 2">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/ah-mat.jpg" class="thumb-img" alt="Thumb 2">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel"
+                                        data-bs-slide-to="2" aria-label="Ảnh 3">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/mat2.jpg" class="thumb-img" alt="Thumb 3">
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="thumb-btn w-100 border-0 p-0" data-bs-target="#projectCarousel"
+                                        data-bs-slide-to="3" aria-label="Ảnh 4">
+                                        <div class="ratio ratio-1x1 rounded overflow-hidden border">
+                                            <img src="img/nhatre.jpg" class="thumb-img" alt="Thumb 4">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bên phải: Nội dung dự án -->
+                        <div class="col-lg-5">
+                            <h4 class="mb-3">Charity Project</h4>
+                            <p>
+                                As a <strong>team leader</strong>, I organized a
+                                fundraising sales program
+                                that lasted for <strong>three weeks</strong>. The
+                                project attracted many
+                                volunteers and local supporters. As a result, we
+                                successfully raised
+                                <strong>2,000,000 VND</strong> to support an orphanage
+                                in District 12.
+                            </p>
+
+                            <ul class="list-unstyled mb-4">
+                                <li>⏳ <b>Time Line:</b> 17/07/2024</li>
+                                <li>🎯 <b>Objective:</b> Fundraising to support orphans
+                                </li>
+                                <li>📈 <b>Result:</b> Successfully collected 2,000,000
+                                    VND</li>
+                            </ul>
+
+                            <div class="border rounded p-3 bg-light small">
+                                <h6 class="fw-bold mb-2">Highlights & Lessons Learned
+                                </h6>
+                                <ul class="mb-0 ps-3">
+                                    <li>Planned the sales program and divided tasks
+                                        clearly</li>
+                                    <li>Used different communication channels to reach
+                                        more people</li>
+                                    <li>Improved skills in communication, persuasion,
+                                        and team management</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div><!-- /row -->
+                </div><!-- /modal-body -->
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script>
-  AOS.init({
-    duration: 1000,   // thời gian chạy (ms)
-    once: false,      // false = chạy lại khi scroll lên/xuống
-    mirror: true      // true = chạy ngược khi cuộn ngược lên
-  });
+    AOS.init({
+        duration: 1000,   // thời gian chạy (ms)
+        once: false,      // false = chạy lại khi scroll lên/xuống
+        mirror: true      // true = chạy ngược khi cuộn ngược lên
+    });
 </script>
 
 </html>

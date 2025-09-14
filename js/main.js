@@ -1,4 +1,12 @@
 
+     window.addEventListener("load", function(){
+    const preloader = document.getElementById("preloader");
+    setTimeout(()=>{
+      preloader.classList.add("fade-out");
+    }, 4000); // 2 giây rồi biến mất
+  });
+
+
     const texts = [
         "technology student",
         "adventurer",
@@ -86,3 +94,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
