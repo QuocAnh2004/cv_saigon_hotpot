@@ -161,22 +161,3 @@ p.fw-bold.h1 {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
-/* ===== MOBILE TWEAKS ===== */
-@media (max-width: 576px){
-  /* ngắn hơn & nhanh hơn trên mobile */
-  .scooter{ animation-duration: 1.4s; }
-  #preloader{ transition-duration: .55s; }
-}
-
-/* ===== DARK MODE (nếu trang dùng data-bs-theme="dark") ===== */
-:root[data-bs-theme="dark"] #preloader{
-  background:#0d0d0d; color:#f8f9fa;
-}
-:root[data-bs-theme="dark"] .preloader-sub{ color: rgba(255,255,255,.8); }
-
-/* ===== ACCESSIBILITY: tắt animation nếu user không thích chuyển động ===== */
-@media (prefers-reduced-motion: reduce){
-  .scooter{ animation: none !important; opacity:1 !important; }
-  #preloader{ transition: none !important; }
-}
