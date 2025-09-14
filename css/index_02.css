@@ -1,0 +1,116 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 70px; 
+  
+}
+
+.social-icons .bi {
+  color: black;
+  font-size: 40px;
+}
+
+.icon a:hover {
+  color: #ffc107;
+}
+
+.instagram {
+  text-decoration: none;
+  color: black;
+}
+
+.custom-nav .nav-item {
+  margin-left: 50px;
+  /* Khoảng cách mong muốn giữa các mục */
+}
+.nav-item:hover {
+  text-decoration: overline;
+  /* Khoảng cách mong muốn giữa các mục */
+}
+.img_profile img {
+  object-fit: cover;
+  max-height: 500px;
+}
+
+
+/* Định dạng hiệu ứng di chuyển */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+/* Áp dụng hiệu ứng cho các phần tử */
+p.fw-bold.h1 {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.slide-out-left {
+  animation-name: slideOutLeft;
+}
+
+.slide-in-right {
+  animation-name: slideInRight;
+}
+
+.typing-effect {
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
+
+/* /* chỉnh ảnh card img  */
+.card-img-top-thumbnail{
+  height: 250px;          /* chỉnh số px phù hợp */
+  object-fit: cover;      /* cắt ảnh cho đều */
+   width: 100%;       
+}
+
+  .carousel-img-fit {
+    position: absolute; /* cần cho .ratio */
+    inset: 0;           /* 4 cạnh = 0 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* QUAN TRỌNG: cắt ảnh nhưng giữ tỷ lệ */
+  }
+  /* Ảnh thumbnail gọn gàng */
+  .thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Highlight thumbnail đang active */
+  .thumb-btn.active .ratio {
+    outline: 3px solid rgba(13,110,253,.7); /* màu primary của Bootstrap */
+    outline-offset: 0;
+  }
+
+  /* đổi màu khi nút active */
+.nav-pills .nav-link.active {
+  background-color: #ffc107; /* vàng Bootstrap warning */
+  color: #000;              /* chữ màu đen cho dễ đọc */
+}
+.nav-pills .nav-link {
+  color: #000 !important;
+}
+
+
