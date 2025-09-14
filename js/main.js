@@ -68,10 +68,21 @@ function initializeCarousel(modalId, carouselId, thumbRowId) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Gọi hàm cho modal đầu tiên
-    initializeCarousel('detailModal-01', '#projectCarousel', '#thumbRow');
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Gọi hàm cho modal đầu tiên
+//     initializeCarousel('detailModal-01', '#projectCarousel', '#thumbRow');
     
-    // Gọi hàm cho modal thứ hai
-    initializeCarousel('detailModal-02', '#projectCarousel-02', '#thumbRow-02');
+//     // Gọi hàm cho modal thứ hai
+//     initializeCarousel('detailModal-02', '#projectCarousel-02', '#thumbRow-02');
+// });
+document.addEventListener('DOMContentLoaded', function () {
+      // Modal English Club (id = detailModal-03) — thêm dòng này
+  initializeCarousel('detailModal-03', '#projectCarousel-03', '#thumbRow-03');
+  // Modal Charity Project (id = detailModal)
+  initializeCarousel('detailModal', '#projectCarousel', '#thumbRow');
+
+  // Modal Vesak (id = detailModal-02) — dòng này bạn đã có đúng
+  initializeCarousel('detailModal-02', '#projectCarousel-02', '#thumbRow-02');
+
+
 });
