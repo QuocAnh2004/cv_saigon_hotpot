@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/index_02.css">
     <link rel="website icon" type="jpg" href="img/7748166.jpg">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -23,64 +23,55 @@
 <body>
     <div class="container-fluid">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand " href="#">
-                        <h1 class="fw-bold text-decoration-underline">Batoluxi</h1>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav fs-6 custom-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#about">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+           <!-- NAVBAR FIXED-TOP + OFFCANVAS ON MOBILE -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <i class="bi bi-compass-fill text-warning"></i>
+      <span class="fw-bold">Batoluxi</span>
+    </a>
 
-                </div>
-            </nav>
+    <!-- Nút hamburger (mobile) mở OFFCANVAS -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <!-- Offcanvas Navbar -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold text-decoration-underline" id="offcanvasNavbarLabel">Batoluxi
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <!-- MENU DESKTOP (>= lg): hiển thị inline -->
+    <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+      <ul class="navbar-nav fs-6 custom-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- OFFCANVAS (MOBILE < lg) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Batoluxi</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav fs-5">
+      <li class="nav-item"><a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#experience" data-bs-dismiss="offcanvas">Experience</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Spacer để nội dung không bị che bởi fixed-top -->
+
 
             <header></header>
         </div>
-        <hr />
         <div class="container">
             <main id="home">
                 <div class="section-1">
@@ -141,7 +132,7 @@
             </main>
         </div>
 
-        <div class="container mt-5" id="about">
+        <div class="container" id="about">
             <p class="text-center display-5 fw-bolder">
                 About Me
             </p>
